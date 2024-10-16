@@ -66,19 +66,19 @@
 
 /*experiences*/
 
-#experiences{
+.experiences{
     display: flex;
 }
-#experiences > *{
+.experiences > *{
     flex: 1;
 }
-#experiences > h1{
+.experiences > h1{
     font-size: 32px;
 }
-#experiences > #work-experience > div {
+.experiences > #work-experience > div {
     margin-bottom: 50px;
 }
-#experiences > #work-experience > div > div{
+.experiences > #work-experience > div > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,13 +94,13 @@
     }
     #about-me > h1,
     #capabilities > h1,
-    #experiences > h1{
+    .experiences > h1{
         margin-bottom: 15px;
     }
     #cta{
         justify-content: start;
     }
-    #capabilities,#experiences{
+    #capabilities,.experiences{
         flex-direction: column;
     }
 

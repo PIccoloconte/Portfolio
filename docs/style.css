@@ -460,9 +460,6 @@ footer > div > p > a{
     border-bottom: 1px solid var(--yellowText);
 }
 
-#contact{
-
-}
 #contact > * {
     display: block;
 }
@@ -518,6 +515,11 @@ body.hidden #background-cover{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 5;
+}
+
+h4.conpany-text{
+    color: var(--yellowText);
+    margin-bottom: 10px;
 }
 
 /* Responsive Design on mobile */
