@@ -7,8 +7,8 @@
 #about-me > *{
     flex: 1;
 }
-#about-me > h1{
-    font-size: 32px;
+#about-me > h2{
+    font-size: 45px;
 }
 #about-me > div > *:not(:last-child){
     margin-bottom: 10px;
@@ -30,23 +30,22 @@
     width: 80%;
     border-radius: 20px;
 }
-
 #capabilities{
     display: flex;
 } 
 #capabilities >*{
     flex: 1;
 }
-#capabilities > h1{
-    font-size: 32px;
+#capabilities > h2{
+    font-size: 45px;
 }
 #capabilities > div > div{
     margin-bottom: 15px;
 }
 #capabilities > div > div >h4{
     margin-bottom: 10px;
+    font-size: 20px;
 }
-
 #capabilities > div > div > div{
     margin-top: 10px;
     display: flex;
@@ -72,8 +71,8 @@
 .experiences > *{
     flex: 1;
 }
-.experiences > h1{
-    font-size: 32px;
+.experiences > h2{
+    font-size: 45px;
 }
 .experiences > #work-experience > div {
     margin-bottom: 50px;
@@ -84,6 +83,9 @@
     align-items: center;
     margin-bottom: 10px;
 }
+.experiences > #work-experience > div  h4{
+    font-size: 20px;
+}
 
 @media (max-width: 768px) {
 
@@ -92,10 +94,11 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
-    #about-me > h1,
-    #capabilities > h1,
-    .experiences > h1{
+    #about-me > h2,
+    #capabilities > h2,
+    .experiences > h2{
         margin-bottom: 15px;
+        font-size: 30px;
     }
     #cta{
         justify-content: start;
@@ -103,5 +106,4 @@
     #capabilities,.experiences{
         flex-direction: column;
     }
-
 }

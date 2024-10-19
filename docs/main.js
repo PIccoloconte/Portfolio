@@ -15,3 +15,23 @@ window.addEventListener("click" ,(e)=>{
         body.classList.remove("hidden");
     }
 })
+
+
+//Smooth scroll on click link
+document.querySelectorAll('.scroll-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        //get id from link
+        const targetId = this.getAttribute('href');
+        //get section from id
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth', 
+                block: 'start'
+            });
+        }
+    });
+});

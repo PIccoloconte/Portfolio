@@ -22,6 +22,7 @@ body {
     color: white;
     width: 100%;
     position: relative;
+    padding-bottom: 20px;
 }
 body.hidden{
     overflow-y: hidden;
@@ -40,7 +41,6 @@ header {
     text-decoration: none;
     color: #fff;
 }
-
 #logo h1 {
     font-weight: bold;
 }
@@ -48,13 +48,11 @@ header {
     cursor: pointer;
     color: var(--yellowText);
 }
-
 #nav-desktop .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-
 #nav-desktop .nav-links a {
     text-decoration: none;
     color: white;
@@ -120,7 +118,6 @@ header {
 #nav-mobile > .nav-links >li:nth-child(3) {
     transform: translateX(600px);
 }
-
 #nav-mobile > .nav-links >li >a{
     color: #fff;
     text-decoration: none;
@@ -137,17 +134,15 @@ body > section{
     justify-content: space-between;
     align-items: center;
 }
-
 .hero-text {
     max-width: 50%;
 }
 
-.hero-text h2 {
-    font-size: 50px;
+.hero-text h1 {
+    font-size: 60px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
 .hero-text p {
     font-size: 18px;
     margin-bottom: 30px;
@@ -158,7 +153,6 @@ body > section{
     align-items: center;
     gap: 20px;
 }
-
 .button {
     display: flex;
     justify-content: center;
@@ -258,8 +252,8 @@ body > section{
 .projects{
 
 }
-.projects > h1{
-    font-size: 32px;
+.projects > h2{
+    font-size: 45px;
 }
 .projects > p{
     margin-bottom: 20px;
@@ -269,8 +263,10 @@ body > section{
 }
 .projects > .projects-tipe > h3{
     margin-bottom: 40px;
-    font-size: 22px;
+    font-size: 26px;
 }
+
+/*project*/
 .project{
     display: flex;
     gap: 40px;
@@ -278,11 +274,9 @@ body > section{
 .projects-tipe > .project:not(:last-child){
     margin-bottom: 20px;
 }
-
 .project > *{
     flex: 1;
 }
-
 .project > .project-img{
     display: flex;
     justify-content: center;
@@ -310,6 +304,7 @@ body > section{
     align-items: center;
     font-size: 14px;
 }
+
 /*Project description*/
 .project > .project-description{
     padding: 50px 0 ;
@@ -318,7 +313,7 @@ body > section{
     margin-bottom: 10px;
 } 
 .project-description > h4{
-    font-size: 20px;
+    font-size: 24px;
 }
 .project-description > .project-info{
     display: flex;
@@ -349,7 +344,6 @@ body > section{
 }
 
 /*project description animation*/
-
 .project-img.fade{
     opacity: 0;
     transition: opacity 0.4s linear;
@@ -357,9 +351,6 @@ body > section{
 .project-img.fade.appear{
     opacity: 1;
 }
-
-
-
 .project-description .transition-fade{
     transform: translateY(100px);   
     opacity: 0;
@@ -407,13 +398,6 @@ body > section{
 }
 
 
-
-
-
-
-
-
-
 /*about*/
 #about{
     display: flex;
@@ -421,8 +405,8 @@ body > section{
 #about > *{
     flex: 1;
 }
-#about > h1{
-    font-size: 32px;
+#about > h2{
+    font-size: 45px;
 }
 #about > div > *:not(:last-child){
     margin-bottom: 10px;
@@ -434,7 +418,6 @@ body > section{
     width: fit-content;
 }
 
-
 /*Footer*/
 footer{
     padding:50px;
@@ -443,11 +426,9 @@ footer{
 footer > *{
     flex:1;
 }
-footer > *:first-child{
-    margin-bottom: 30px;
-}
-footer > div > h1{
+footer > div > h2{
     margin-bottom: 15px;
+    font-size: 30px;
 }
 footer > div > p{
     margin-bottom: 10px;
@@ -460,8 +441,10 @@ footer > div > p > a{
     border-bottom: 1px solid var(--yellowText);
 }
 
+/*contact*/
 #contact > * {
     display: block;
+    font-family: 'Roboto', sans-serif;
 }
 #contact > label {
     margin-bottom: 5px;
@@ -487,7 +470,6 @@ footer > div > p > a{
     border: none;
     resize: none;
 }
-
 #contact > button{
     margin-top: 10px;
     background-color: var(--yellowText);
@@ -499,11 +481,13 @@ footer > div > p > a{
     font-weight: bold;
     transition: all 0.1s linear;
 }
-
 #contact > button:hover{
     background-color: var(--darkBg);
     color: var(--yellowText);
     cursor: pointer;
+}
+#contact .social-icons{
+    margin: 40px 0 ;
 }
 
 /*background black cover when mobile navigation*/
@@ -516,10 +500,18 @@ body.hidden #background-cover{
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 5;
 }
-
 h4.conpany-text{
     color: var(--yellowText);
     margin-bottom: 10px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+
+#creator{
+    margin-left: 20px;
+    font-size: 20px;
+    color: var(--secondaryText);
 }
 
 /* Responsive Design on mobile */
@@ -534,6 +526,7 @@ h4.conpany-text{
     header > #logo > a > h1{
         font-size: 24px;
     }
+
     /*navigation*/
     #nav-desktop{
         display: none;
@@ -546,21 +539,20 @@ h4.conpany-text{
         outline: none;
         color: #fff;
     }
-
     .hero {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-
     .hero-text {
         max-width: 100%;
     }
-
+    .hero-text h1 {
+        font-size: 40px;
+    }
     .hero-text h2 {
         font-size: 36px;
     }
-
     .hero-image img {
         max-width: 300px;
         margin-top: 30px;
@@ -577,7 +569,11 @@ h4.conpany-text{
         opacity: 1;
         font-size: 25px;
     }
+
     /*Projects*/
+    .projects > h2{
+        font-size: 30px;
+    }
     .project{
         flex-direction: column;
         gap: 20px;
@@ -586,14 +582,22 @@ h4.conpany-text{
         padding: 20px 0;
         
     }
+
     /*About*/
     #about{
         flex-direction: column;
         margin-bottom: 20px;
     }
+    #about > h2{
+        font-size: 30px;
+    }
+
     /*footer*/
     footer{
         flex-direction: column;
         padding: 25px 15px;
-    }    
+    } 
+    footer > div > h2{
+        font-size: 20px;
+    }   
 }
