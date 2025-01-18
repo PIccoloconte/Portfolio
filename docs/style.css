@@ -1,603 +1,599 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-   --darkBg : #1b1b1b;
-   --yellowText : #d3e97a;
-   --secondaryText: #aca5a5;
+:root {
+  --darkBg: #1b1b1b;
+  --yellowText: #d3e97a;
+  --secondaryText: #aca5a5;
 }
-.secondaryText{
-    color: var(--secondaryText);
+.secondaryText {
+  color: var(--secondaryText);
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
-    width: 100%;
-    position: relative;
-    padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: relative;
+  padding-bottom: 20px;
 }
-body.hidden{
-    overflow-y: hidden;
+body.hidden {
+  overflow-y: hidden;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background-color: var(--darkBg);
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: var(--darkBg);
+  align-items: center;
 }
 
-#logo > a{
-    text-decoration: none;
-    color: #fff;
+#logo > a {
+  text-decoration: none;
+  color: #fff;
 }
 #logo h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
-#logo h1:hover{
-    cursor: pointer;
-    color: var(--yellowText);
+#logo h1:hover {
+  cursor: pointer;
+  color: var(--yellowText);
 }
 #nav-desktop .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 #nav-desktop .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
-#nav-desktop .nav-links a:hover{
-    color: var(--yellowText);
-    text-decoration: underline;
+#nav-desktop .nav-links a:hover {
+  color: var(--yellowText);
+  text-decoration: underline;
 }
 
 /*mobile navigatio*/
-#nav-mobile-btn{
-    display: none;
+#nav-mobile-btn {
+  display: none;
 }
-#nav-mobile-btn{
-    display: none;    
+#nav-mobile-btn {
+  display: none;
 }
-#nav-mobile{
-    position: fixed;
-    width: 70%;
-    max-width: 500px;
-    background-color: var(--darkBg);
-    right: 0;
-    top:0;
-    height: 100%;
-    transform: translateX(100%);
-    color: black;
-    transition: all 0.2s linear;
-    z-index: 10;
+#nav-mobile {
+  position: fixed;
+  width: 70%;
+  max-width: 500px;
+  background-color: var(--darkBg);
+  right: 0;
+  top: 0;
+  height: 100%;
+  transform: translateX(100%);
+  color: black;
+  transition: all 0.2s linear;
+  z-index: 10;
 }
-#nav-mobile > *:first-child{
-    color: #fff;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #fff;
+#nav-mobile > *:first-child {
+  color: #fff;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
 }
-#nav-mobile.show{
-    transform: translateX(0%);
+#nav-mobile.show {
+  transform: translateX(0%);
 }
-#nav-mobile .nav-links{
-    list-style: none;
-    margin: 20px 0 0 10px;
+#nav-mobile .nav-links {
+  list-style: none;
+  margin: 20px 0 0 10px;
 }
-#nav-mobile > .nav-links >li:not(:last-child) {
-    margin-bottom: 20px;
+#nav-mobile > .nav-links > li:not(:last-child) {
+  margin-bottom: 20px;
 }
 /*nav links animation*/
-#nav-mobile.show.leftAnim > .nav-links > li{
-    transform: translateX(0px);
-    transition: all 0.4s linear;
-    opacity: 1;
+#nav-mobile.show.leftAnim > .nav-links > li {
+  transform: translateX(0px);
+  transition: all 0.4s linear;
+  opacity: 1;
 }
-#nav-mobile > .nav-links >li{
-    opacity: 0;
+#nav-mobile > .nav-links > li {
+  opacity: 0;
 }
-#nav-mobile > .nav-links >li:nth-child(1) {
-    transform: translateX(200px);
+#nav-mobile > .nav-links > li:nth-child(1) {
+  transform: translateX(200px);
 }
-#nav-mobile > .nav-links >li:nth-child(2) {
-    transform: translateX(400px);
+#nav-mobile > .nav-links > li:nth-child(2) {
+  transform: translateX(400px);
 }
-#nav-mobile > .nav-links >li:nth-child(3) {
-    transform: translateX(600px);
+#nav-mobile > .nav-links > li:nth-child(3) {
+  transform: translateX(600px);
 }
-#nav-mobile > .nav-links >li >a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
+#nav-mobile > .nav-links > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
 }
 
-body > section{
-    padding: 50px;
+body > section {
+  padding: 50px;
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .hero-text {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .hero-text h1 {
-    font-size: 60px;
-    line-height: 1.2;
-    margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 .hero-text p {
-    font-size: 18px;
-    margin-bottom: 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 #cta {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 60px 0 15px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: var(--yellowText);
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px 0 15px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--yellowText);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
 }
-.button > span{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.1s linear;
+.button > span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s linear;
 }
-.button > span > i{
-    opacity: 0;
-    color: var(--yellowText);
-    transition: opacity 0.1s linear;
-    font-size: 10px;
-    transition: font-size 0.1s linear;
+.button > span > i {
+  opacity: 0;
+  color: var(--yellowText);
+  transition: opacity 0.1s linear;
+  font-size: 10px;
+  transition: font-size 0.1s linear;
 }
-.button:hover > span{
-    width: 40px;
-    height: 40px;
-    right: -15px;
+.button:hover > span {
+  width: 40px;
+  height: 40px;
+  right: -15px;
 }
-.button:hover > span >i{
-    opacity: 1;
-    font-size: 25px;
+.button:hover > span > i {
+  opacity: 1;
+  font-size: 25px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .social-icons a {
-    text-decoration: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: var(--darkBg);
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.1s linear;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--darkBg);
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s linear;
 }
-.social-icons a:hover{
-    background-color: var(--yellowText);
-
+.social-icons a:hover {
+  background-color: var(--yellowText);
 }
-.social-icons a i{
-    font-size: 20px;
-    color: var(--yellowText);
-    transition: color 0.1s linear;
+.social-icons a i {
+  font-size: 20px;
+  color: var(--yellowText);
+  transition: color 0.1s linear;
 }
-.social-icons a:hover i{
-    color: black;
-    font-size: 25px;
+.social-icons a:hover i {
+  color: black;
+  font-size: 25px;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Hero Image */
 .hero-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
 }
 
 /*separator*/
-.separator{
-    border: none;
-    height: 1px;             
-    background-color: #fff;   
-    transform: scaleY(0.5);   
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleY(0.5);
 }
 
 /*Projects*/
-.projects{
-
+.projects {
 }
-.projects > h2{
-    font-size: 45px;
+.projects > h2 {
+  font-size: 45px;
 }
-.projects > p{
-    margin-bottom: 20px;
+.projects > p {
+  margin-bottom: 20px;
 }
-.projects > .projects-tipe{
-    margin-bottom: 20px;
+.projects > .projects-tipe {
+  margin-bottom: 20px;
 }
-.projects > .projects-tipe > h3{
-    margin-bottom: 40px;
-    font-size: 26px;
+.projects > .projects-tipe > h3 {
+  margin-bottom: 40px;
+  font-size: 26px;
 }
 
 /*project*/
-.project{
-    display: flex;
-    gap: 40px;
+.project {
+  display: flex;
+  gap: 40px;
 }
-.projects-tipe > .project:not(:last-child){
-    margin-bottom: 20px;
+.projects-tipe > .project:not(:last-child) {
+  margin-bottom: 20px;
 }
-.project > *{
-    flex: 1;
+.project > * {
+  flex: 1;
 }
-.project > .project-img{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    position: relative;
-    background-color: #1b1b1b;
-    border-radius: 15px;
+.project > .project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1b1b1b;
+  border-radius: 15px;
 }
-.project-img >img{
-    width: 90%;
-    height: 80%;
-    object-fit: contain;
+.project-img > img {
+  width: 90%;
+  height: 80%;
+  object-fit: contain;
 }
-.project-img > p{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #fff;
-    height: 30px;
-    border-radius: 15px;
-    padding: 0 10px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+.project-img > p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 /*Project description*/
-.project > .project-description{
-    padding: 50px 0 ;
-} 
-.project > .project-description > *{
-    margin-bottom: 10px;
-} 
-.project-description > h4{
-    font-size: 24px;
+.project > .project-description {
+  padding: 50px 0;
 }
-.project-description > .project-info{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+.project > .project-description > * {
+  margin-bottom: 10px;
 }
-.project-description > .project-info >*{
-    padding: 10px 0;
-    border-bottom: 1px solid #fff;    
+.project-description > h4 {
+  font-size: 24px;
 }
-.project-description > .project-info > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.project-description > .project-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
-.project-description > div > a{
-    color: var(--yellowText);
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 1px solid;
+.project-description > .project-info > * {
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
 }
-.project-description > div > a:hover{
-    color: var(--darkBg);
+.project-description > .project-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.project-description > div > a:not(:last-child){
-    margin-right: 10px;
+.project-description > div > a {
+  color: var(--yellowText);
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+.project-description > div > a:hover {
+  color: var(--darkBg);
+}
+.project-description > div > a:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*project description animation*/
-.project-img.fade{
+.project-img.fade {
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.project-img.fade.appear {
+  opacity: 1;
+}
+.project-description .transition-fade {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.project-description.appear .transition-fade {
+  transform: translateY(0);
+  opacity: 1;
+}
+.project-description .transition-fade:nth-child(1) {
+  transition-delay: 0s;
+}
+.project-description .transition-fade:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.project-description .transition-fade:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.project-description .transition-fade:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.project-description .transition-fade:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.project-description .transition-fade:nth-child(6) {
+  transition-delay: 1s;
+}
+.project-description .transition-fade:nth-child(6) {
+  transition-delay: 1.2s;
+}
+
+.text-anim {
+  animation: autoShowAnimation 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes autoShowAnimation {
+  from {
     opacity: 0;
-    transition: opacity 0.4s linear;
-}
-.project-img.fade.appear{
+  }
+  to {
     opacity: 1;
+  }
 }
-.project-description .transition-fade{
-    transform: translateY(100px);   
-    opacity: 0;
-    transition: all 0.4s linear; 
-}
-.project-description.appear .transition-fade{
-    transform: translateY(0);
-    opacity: 1;
-}
-.project-description .transition-fade:nth-child(1){
-    transition-delay:0s;
-}
-.project-description .transition-fade:nth-child(2){
-    transition-delay:0.2s;
-}
-.project-description .transition-fade:nth-child(3){
-    transition-delay:0.4s;
-}
-.project-description .transition-fade:nth-child(4){
-    transition-delay:0.6s;
-}
-.project-description .transition-fade:nth-child(5){
-    transition-delay:0.8s;
-}
-.project-description .transition-fade:nth-child(6){
-    transition-delay:1s;
-}
-.project-description .transition-fade:nth-child(6){
-    transition-delay:1.2s ;
-}
-
-.text-anim{
-    animation: autoShowAnimation 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
-
-@keyframes autoShowAnimation{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;    
-    }
-}
-
 
 /*about*/
-#about{
-    display: flex;
+#about {
+  display: flex;
 }
-#about > *{
-    flex: 1;
+#about > * {
+  flex: 1;
 }
-#about > h2{
-    font-size: 45px;
+#about > h2 {
+  font-size: 45px;
 }
-#about > div > *:not(:last-child){
-    margin-bottom: 10px;
+#about > div > *:not(:last-child) {
+  margin-bottom: 10px;
 }
-#about > div > h4{
-    font-size: 20px;
+#about > div > h4 {
+  font-size: 20px;
 }
-#about > div > a{
-    width: fit-content;
+#about > div > a {
+  width: fit-content;
 }
 
 /*Footer*/
-footer{
-    padding:50px;
-    display:flex;
+footer {
+  padding: 50px;
+  display: flex;
 }
-footer > *{
-    flex:1;
+footer > * {
+  flex: 1;
 }
-footer > div > h2{
-    margin-bottom: 15px;
-    font-size: 30px;
+footer > div > h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
 }
-footer > div > p{
-    margin-bottom: 10px;
-    color: var(--secondaryText);
+footer > div > p {
+  margin-bottom: 10px;
+  color: var(--secondaryText);
 }
-footer > div > p > a{
-    text-decoration: none;
-    color: #fff;
-    padding-bottom: 4px;
-    border-bottom: 1px solid var(--yellowText);
+footer > div > p > a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--yellowText);
 }
 
 /*contact*/
 #contact > * {
-    display: block;
-    font-family: 'Roboto', sans-serif;
+  display: block;
+  font-family: "Roboto", sans-serif;
 }
 #contact > label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-#contact > input{
-    margin-bottom: 10px;
-    width: 100%;
-    background-color:lightslategray;
-    border-radius: 5px;
-    outline: none;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
+#contact > input {
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: lightslategray;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
 }
-#contact > textarea{
-    width: 100%;
-    height: 80px;
-    border-radius: 10px;
-    background-color:lightslategray;
-    outline: none;
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    resize: none;
+#contact > textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: lightslategray;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  resize: none;
 }
-#contact > button{
-    margin-top: 10px;
-    background-color: var(--yellowText);
-    padding: 10px 20px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.1s linear;
+#contact > button {
+  margin-top: 10px;
+  background-color: var(--yellowText);
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.1s linear;
 }
-#contact > button:hover{
-    background-color: var(--darkBg);
-    color: var(--yellowText);
-    cursor: pointer;
+#contact > button:hover {
+  background-color: var(--darkBg);
+  color: var(--yellowText);
+  cursor: pointer;
 }
-#contact .social-icons{
-    margin: 40px 0 ;
+#contact .social-icons {
+  margin: 40px 0;
 }
 
 /*background black cover when mobile navigation*/
-body.hidden #background-cover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 5;
+body.hidden #background-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
 }
-h4.conpany-text{
-    color: var(--yellowText);
-    margin-bottom: 10px;
+h4.conpany-text {
+  color: var(--yellowText);
+  margin-bottom: 10px;
 }
-.font-size-18{
-    font-size: 18px;
+.font-size-18 {
+  font-size: 18px;
 }
 
-#creator{
-    margin-left: 20px;
-    font-size: 20px;
-    color: var(--secondaryText);
+#creator {
+  margin-left: 20px;
+  font-size: 20px;
+  color: var(--secondaryText);
 }
 
 /* Responsive Design on mobile */
 @media (max-width: 768px) {
-    body > section{
-        padding: 25px 15px 0;
-    }
-    header {
-        padding: 20px;
-        position: relative;
-    }
-    header > #logo > a > h1{
-        font-size: 24px;
-    }
+  body > section {
+    padding: 25px 15px 0;
+  }
+  header {
+    padding: 20px;
+    position: relative;
+  }
+  header > #logo > a > h1 {
+    font-size: 24px;
+  }
 
-    /*navigation*/
-    #nav-desktop{
-        display: none;
-    }
-    #nav-mobile-btn{
-        display: block;
-        font-size: 30px;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: #fff;
-    }
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .hero-text {
-        max-width: 100%;
-    }
-    .hero-text h1 {
-        font-size: 40px;
-    }
-    .hero-text h2 {
-        font-size: 36px;
-    }
-    .hero-image img {
-        max-width: 300px;
-        margin-top: 30px;
-    }
-    #cta{
-        justify-content: center;
-    }
-    .button > span{
-        width: 40px;
-        height: 40px;
-        right: -15px;
-    }
-    .button > span >i{
-        opacity: 1;
-        font-size: 25px;
-    }
+  /*navigation*/
+  #nav-desktop {
+    display: none;
+  }
+  #nav-mobile-btn {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-text h2 {
+    font-size: 36px;
+  }
+  .hero-image img {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+  #cta {
+    justify-content: center;
+  }
+  .button > span {
+    width: 40px;
+    height: 40px;
+    right: -15px;
+  }
+  .button > span > i {
+    opacity: 1;
+    font-size: 25px;
+  }
 
-    /*Projects*/
-    .projects > h2{
-        font-size: 30px;
-    }
-    .project{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .project > .project-description{
-        padding: 20px 0;
-        
-    }
+  /*Projects*/
+  .projects > h2 {
+    font-size: 30px;
+  }
+  .project {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project > .project-description {
+    padding: 20px 0;
+  }
 
-    /*About*/
-    #about{
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    #about > h2{
-        font-size: 30px;
-    }
+  /*About*/
+  #about {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #about > h2 {
+    font-size: 30px;
+  }
 
-    /*footer*/
-    footer{
-        flex-direction: column;
-        padding: 25px 15px;
-    } 
-    footer > div > h2{
-        font-size: 20px;
-    }   
+  /*footer*/
+  footer {
+    flex-direction: column;
+    padding: 25px 15px;
+  }
+  footer > div > h2 {
+    font-size: 20px;
+  }
 }

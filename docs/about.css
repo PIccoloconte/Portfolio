@@ -1,109 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 /*about-me*/
-#about-me{
-    display: flex;
+#about-me {
+  display: flex;
 }
-#about-me > *{
-    flex: 1;
+#about-me > * {
+  flex: 1;
 }
-#about-me > h2{
-    font-size: 45px;
+#about-me > h2 {
+  font-size: 45px;
 }
-#about-me > div > *:not(:last-child){
-    margin-bottom: 10px;
+#about-me > div > *:not(:last-child) {
+  margin-bottom: 10px;
 }
-#about-me > div > h4{
-    font-size: 20px;
+#about-me > div > h4 {
+  font-size: 20px;
 }
-#about-me > div > a{
-    width: fit-content;
+#about-me > div > a {
+  width: fit-content;
 }
 
 /*Main image*/
-#img-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+#img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-#main-img{
-    width: 80%;
-    border-radius: 20px;
+#main-img {
+  width: 80%;
+  border-radius: 20px;
 }
-#capabilities{
-    display: flex;
-} 
-#capabilities >*{
-    flex: 1;
+#capabilities {
+  display: flex;
 }
-#capabilities > h2{
-    font-size: 45px;
+#capabilities > * {
+  flex: 1;
 }
-#capabilities > div > div{
-    margin-bottom: 15px;
+#capabilities > h2 {
+  font-size: 45px;
 }
-#capabilities > div > div >h4{
-    margin-bottom: 10px;
-    font-size: 20px;
+#capabilities > div > div {
+  margin-bottom: 15px;
 }
-#capabilities > div > div > div{
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+#capabilities > div > div > h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
-#capabilities > div > div > div >span{
-    height: 40px;
-    padding: 0 20px;
-    border-radius: 20px;
-    border:  1px solid #fff;
-    text-wrap: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#capabilities > div > div > div {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#capabilities > div > div > div > span {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*experiences*/
 
-.experiences{
-    display: flex;
+.experiences {
+  display: flex;
 }
-.experiences > *{
-    flex: 1;
+.experiences > * {
+  flex: 1;
 }
-.experiences > h2{
-    font-size: 45px;
+.experiences > h2 {
+  font-size: 45px;
 }
 .experiences > #work-experience > div {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-.experiences > #work-experience > div > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.experiences > #work-experience > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.experiences > #work-experience > div  h4{
-    font-size: 20px;
+.experiences > #work-experience > div h4 {
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
-
-    /*About*/
-    #about-me{
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-    #about-me > h2,
-    #capabilities > h2,
-    .experiences > h2{
-        margin-bottom: 15px;
-        font-size: 30px;
-    }
-    #cta{
-        justify-content: start;
-    }
-    #capabilities,.experiences{
-        flex-direction: column;
-    }
+  /*About*/
+  #about-me {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #about-me > h2,
+  #capabilities > h2,
+  .experiences > h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  #cta {
+    justify-content: start;
+  }
+  #capabilities,
+  .experiences {
+    flex-direction: column;
+  }
 }
